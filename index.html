@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Горящий корабль</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <canvas id="animationCanvas" width="600" height="600"></canvas>
+
+            <form id="configForm">
+                <label for="xRangeStart">x_range: </label>
+                <input type="number" id="xRangeStart" step="any" placeholder="Start">
+                <input type="number" id="xRangeEnd" step="any" placeholder="End"><br><br>
+                
+                <label for="yRangeStart">y_range: </label>
+                <input type="number" id="yRangeStart" step="any" placeholder="Start">
+                <input type="number" id="yRangeEnd" step="any" placeholder="End"><br><br>
+            
+                <button type="button" id="changeConfigBtn">Изменить конфигурацию</button>
+                <button type="button" id="resetFormBtn">Сбросить конфигурацию</button>
+            </form>
+
+            <div class="description">
+                <p><strong>Полный обзор фрактала:</strong> x_range [-2.2, 2.2], y_range [-2.2, 2.2]</p>
+                <p><strong>Увеличение левого нижнего угла:</strong> x_range [-1.81, -1.39], y_range [-0.32, 0.03]</p>
+                <p><strong>Корабль с двумя большими мачтами:</strong> x_range [-1.65, -1.58], y_range [-0.074, 0.018]</p>
+                <p><strong>Маленький кораблик:</strong> x_range [-1.948, -1.925], y_range [-0.0095, 0.003]</p>
+                <p><strong>Самый большой корабль:</strong> x_range [-1.8, -1.7], y_range [-0.08, 0.01]</p>
+                <p><strong>Мачты:</strong> x_range [-1.7825, -1.765], y_range [-0.0671, -0.0494]</p>
+                <p><strong>Горящая полоса:</strong> x_range [-2.01, -1.9469], y_range [-0.02, 0.02]</p>
+            </div>
+
+            <script src="app.js"></script>
+
+        </body>
+    </html>

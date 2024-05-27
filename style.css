@@ -1,0 +1,50 @@
+/* #animationCanvas {
+    display: flex;
+    background-color: #000;
+}
+
+#configForm{
+    display: block;
+} */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #293133;
+}
+
+#animationCanvas {
+
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 75%;
+    background-color: black;
+}
+
+#configForm {
+    position: absolute;
+    top: 3%;
+    left: 55%;
+    transform: translate(0%, 0%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(0%, 0%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #293133;
+}
